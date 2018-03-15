@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
+		D0AEED1F205AF850001D8EF6 /* base32-rfc4648.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1D205AF850001D8EF6 /* base32-rfc4648.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D0AEED0A205A70EC001D8EF6 /* PBBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBase32.h; sourceTree = "<group>"; };
 		D0AEED0F205A7AF9001D8EF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0AEED19205A7F8A001D8EF6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "base32-process-notes.md"; sourceTree = "<group>"; };
+		D0AEED1D205AF850001D8EF6 /* base32-rfc4648.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "base32-rfc4648.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		D0AEECDC205A67B0001D8EF6 = {
 			isa = PBXGroup;
 			children = (
+				D0AEED1B205AF850001D8EF6 /* docs */,
 				D0AEED0F205A7AF9001D8EF6 /* README.md */,
 				D0AEED19205A7F8A001D8EF6 /* LICENSE.txt */,
 				D0AEED04205A6B87001D8EF6 /* Sources */,
@@ -66,6 +71,15 @@
 				D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D0AEED1B205AF850001D8EF6 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */,
+				D0AEED1D205AF850001D8EF6 /* base32-rfc4648.txt */,
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +181,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AEED1F205AF850001D8EF6 /* base32-rfc4648.txt in Resources */,
+				D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
