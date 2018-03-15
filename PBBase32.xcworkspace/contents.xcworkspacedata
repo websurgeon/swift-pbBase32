@@ -4,4 +4,7 @@
    <FileRef
       location = "container:PBBase32.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:PBBase32.playground">
+   </FileRef>
 </Workspace>
