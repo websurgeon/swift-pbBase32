@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0AEECED205A6906001D8EF6 /* PBBase32_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEECEB205A6906001D8EF6 /* PBBase32_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0AEECFA205A69C0001D8EF6 /* PBBase32_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEECF8205A69C0001D8EF6 /* PBBase32_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0AEECE8205A6906001D8EF6 /* PBBase32_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AEECEB205A6906001D8EF6 /* PBBase32_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBase32_iOS.h; sourceTree = "<group>"; };
-		D0AEECEC205A6906001D8EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0AEECF6205A69C0001D8EF6 /* PBBase32_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AEECF8205A69C0001D8EF6 /* PBBase32_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBBase32_macOS.h; sourceTree = "<group>"; };
-		D0AEECF9205A69C0001D8EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D0AEED0A205A70EC001D8EF6 /* PBBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBase32.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +40,7 @@
 		D0AEECDC205A67B0001D8EF6 = {
 			isa = PBXGroup;
 			children = (
-				D0AEECFE205A6A18001D8EF6 /* Sources */,
-				D0AEECEA205A6906001D8EF6 /* PBBase32-iOS */,
-				D0AEECF7205A69C0001D8EF6 /* PBBase32-macOS */,
+				D0AEED04205A6B87001D8EF6 /* Sources */,
 				D0AEECE9205A6906001D8EF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,33 +48,18 @@
 		D0AEECE9205A6906001D8EF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0AEECE8205A6906001D8EF6 /* PBBase32_iOS.framework */,
-				D0AEECF6205A69C0001D8EF6 /* PBBase32_macOS.framework */,
+				D0AEECE8205A6906001D8EF6 /* PBBase32.framework */,
+				D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0AEECEA205A6906001D8EF6 /* PBBase32-iOS */ = {
+		D0AEED04205A6B87001D8EF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D0AEECEB205A6906001D8EF6 /* PBBase32_iOS.h */,
-				D0AEECEC205A6906001D8EF6 /* Info.plist */,
-			);
-			path = "PBBase32-iOS";
-			sourceTree = "<group>";
-		};
-		D0AEECF7205A69C0001D8EF6 /* PBBase32-macOS */ = {
-			isa = PBXGroup;
-			children = (
-				D0AEECF8205A69C0001D8EF6 /* PBBase32_macOS.h */,
-				D0AEECF9205A69C0001D8EF6 /* Info.plist */,
-			);
-			path = "PBBase32-macOS";
-			sourceTree = "<group>";
-		};
-		D0AEECFE205A6A18001D8EF6 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
+				D0AEED0A205A70EC001D8EF6 /* PBBase32.h */,
+				D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */,
+				D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -89,7 +71,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AEECED205A6906001D8EF6 /* PBBase32_iOS.h in Headers */,
+				D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +79,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AEECFA205A69C0001D8EF6 /* PBBase32_macOS.h in Headers */,
+				D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +101,7 @@
 			);
 			name = "PBBase32-iOS";
 			productName = "PBBase32-iOS";
-			productReference = D0AEECE8205A6906001D8EF6 /* PBBase32_iOS.framework */;
+			productReference = D0AEECE8205A6906001D8EF6 /* PBBase32.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D0AEECF5205A69C0001D8EF6 /* PBBase32-macOS */ = {
@@ -137,7 +119,7 @@
 			);
 			name = "PBBase32-macOS";
 			productName = "PBBase32-macOS";
-			productReference = D0AEECF6205A69C0001D8EF6 /* PBBase32_macOS.framework */;
+			productReference = D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -282,14 +264,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32-iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -350,13 +332,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32-iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -425,14 +407,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32-macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -494,13 +476,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32-macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "${PROJECT_NAME}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
