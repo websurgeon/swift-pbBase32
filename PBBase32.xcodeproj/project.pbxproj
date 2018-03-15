@@ -41,6 +41,7 @@
 		D0AEECDC205A67B0001D8EF6 = {
 			isa = PBXGroup;
 			children = (
+				D0AEECFE205A6A18001D8EF6 /* Sources */,
 				D0AEECEA205A6906001D8EF6 /* PBBase32-iOS */,
 				D0AEECF7205A69C0001D8EF6 /* PBBase32-macOS */,
 				D0AEECE9205A6906001D8EF6 /* Products */,
@@ -72,6 +73,13 @@
 				D0AEECF9205A69C0001D8EF6 /* Info.plist */,
 			);
 			path = "PBBase32-macOS";
+			sourceTree = "<group>";
+		};
+		D0AEECFE205A6A18001D8EF6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
