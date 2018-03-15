@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0522746205B294A00419A02"
+               BuildableName = "PBBase32Tests-iOS.xctest"
+               BlueprintName = "PBBase32Tests-iOS"
+               ReferencedContainer = "container:PBBase32.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D0AEECE7205A6906001D8EF6"
+            BuildableName = "PBBase32.framework"
+            BlueprintName = "PBBase32-iOS"
+            ReferencedContainer = "container:PBBase32.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
