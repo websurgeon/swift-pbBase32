@@ -23,11 +23,30 @@ public struct Base32Encoder: ByteArrayEncoder {
 
     func encode(bytes: [Byte]) throws -> [Byte] {
         let inputSize = bytes.count
-        guard inputSize > 0 else { return [] }
         var output = [Byte]()
-        var block = bytes
-        var carry: Byte = 0x0
+        var currentBlock = [Byte]()
         
+        for (index, byte) in bytes.enumerated() {
+            currentBlock.append(byte)
+            
+            let isFullBlock = currentBlock.count == 5
+            let isLastByte = index == inputSize - 1
+            
+            if isFullBlock || isLastByte {
+                output.append(contentsOf:encodeBlock(currentBlock, alphabet: alphabet))
+                currentBlock = []
+            }
+        }
+
+        let padding = paddingForInput(size: inputSize, paddingChar: alphabet.padding)
+        output.append(contentsOf: padding)
+
+        return output
+    }
+
+    private func encodeBlock(_ block: [Byte], alphabet: Alphabet) -> [Byte] {
+        var output = [Byte]()
+        var carry: Byte = 0x0
 
         for (index, _) in block.enumerated() {
             switch index {
@@ -52,15 +71,12 @@ public struct Base32Encoder: ByteArrayEncoder {
                 fatalError("not implemented yet")
             }
         }
-
+        
         output.append(contentsOf: map(carry))
-
-        let padding = paddingForInput(size: inputSize, paddingChar: alphabet.padding)
-        output.append(contentsOf: padding)
 
         return output
     }
-
+    
     public func map(_ byte: Byte) -> [Byte] {
         let char = alphabet.values[Int(byte)]
         let data = char.data(using: .ascii)!
