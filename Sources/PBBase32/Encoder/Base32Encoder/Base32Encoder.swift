@@ -8,6 +8,8 @@ private let _11111: Byte = 0x1f
 private let _11100: Byte = 0x1c
 private let _00011: Byte = 0x03
 private let _10000: Byte = 0x10
+private let _01111: Byte = 0x0f
+private let _11110: Byte = 0x1e
 
 public struct Base32Encoder: ByteArrayEncoder {
     private let alphabet: Alphabet
@@ -33,6 +35,9 @@ public struct Base32Encoder: ByteArrayEncoder {
                 output.append(contentsOf: map(carry | (block[1] >> 6) & _00011))
                 output.append(contentsOf: map((block[1] >> 1) & _11111))
                 carry = (block[1] << 4) & _11100
+            case 2:
+                output.append(contentsOf: map(carry | (block[2] >> 4) & _01111))
+                carry = (block[2] << 1) & _11110
             default:
                 fatalError("not implemented yet")
             }
