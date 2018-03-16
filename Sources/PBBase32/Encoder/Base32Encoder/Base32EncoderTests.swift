@@ -17,10 +17,10 @@ class Base32EncoderTests: XCTestCase {
         assert(encoder: sut, encodes: "", to: "")
     }
     
-//    func test_encode_1Byte() {
-//        assert(encoder: sut, encodes: "1", to: "GE======")
-//    }
-//
+    func test_encode_1Byte() {
+        assert(encoder: sut, encodes: "1", to: "GE======")
+    }
+
 //    func test_encode_2Bytes() {
 //        assert(encoder: sut, encodes: "12", to: "GEZA====")
 //    }

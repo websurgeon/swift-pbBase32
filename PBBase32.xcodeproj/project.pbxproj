@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D028B116205C610D00253ADB /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028B115205C610C00253ADB /* Alphabet.swift */; };
+		D028B117205C61BB00253ADB /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028B115205C610C00253ADB /* Alphabet.swift */; };
 		D0522739205B030800419A02 /* PBBase32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */; };
 		D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522736205B030800419A02 /* PBBase32Tests.swift */; };
 		D052274C205B294A00419A02 /* PBBase32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AEECE8205A6906001D8EF6 /* PBBase32.framework */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D028B115205C610C00253ADB /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
 		D0522734205B030800419A02 /* PBBase32Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0522736205B030800419A02 /* PBBase32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBBase32Tests.swift; sourceTree = "<group>"; };
 		D0522738205B030800419A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D028B114205C610C00253ADB /* Alphabet */ = {
+			isa = PBXGroup;
+			children = (
+				D028B115205C610C00253ADB /* Alphabet.swift */,
+			);
+			path = Alphabet;
+			sourceTree = "<group>";
+		};
 		D0522735205B030800419A02 /* PBBase32Tests-macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +119,7 @@
 		D0522741205B032A00419A02 /* PBBase32 */ = {
 			isa = PBXGroup;
 			children = (
+				D028B114205C610C00253ADB /* Alphabet */,
 				D052278B205C5DF700419A02 /* Encoder */,
 				D0522798205C5EF200419A02 /* PBBase32.swift */,
 				D0522736205B030800419A02 /* PBBase32Tests.swift */,
@@ -384,6 +396,7 @@
 			files = (
 				D0522799205C5EF200419A02 /* PBBase32.swift in Sources */,
 				D0522792205C5E3800419A02 /* Base32Encoder.swift in Sources */,
+				D028B116205C610D00253ADB /* Alphabet.swift in Sources */,
 				D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +407,7 @@
 			files = (
 				D052279A205C5EF200419A02 /* PBBase32.swift in Sources */,
 				D0522797205C5EB000419A02 /* ByteArrayEncoder.swift in Sources */,
+				D028B117205C61BB00253ADB /* Alphabet.swift in Sources */,
 				D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
