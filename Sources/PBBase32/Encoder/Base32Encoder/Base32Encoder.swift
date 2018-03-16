@@ -50,7 +50,7 @@ public struct Base32Encoder: ByteArrayEncoder {
         var carry: Byte = 0x0
 
         func process(_ byte: Byte, _ bitMask: Byte, _ carry: Byte = 0x0) {
-            output.append(contentsOf: map(carry | (byte & bitMask)))
+            output.append(contentsOf: alphabet.map(carry | (byte & bitMask)))
         }
 
         func setCarry(_ byte: Byte, _ bitMask: Byte) {
@@ -86,12 +86,6 @@ public struct Base32Encoder: ByteArrayEncoder {
         return output
     }
     
-    public func map(_ byte: Byte) -> [Byte] {
-        let char = alphabet.values[Int(byte)]
-        let data = char.data(using: .ascii)!
-        return [Byte](data)
-    }
-
 }
 
 private func paddingForInput(size: Int, paddingChar: String) -> [Byte] {

@@ -21,4 +21,10 @@ public struct Alphabet {
             "Y","Z","2","3","4","5","6","7"], padding: "=")
     }
     
+    public func map(_ byte: Byte) -> [Byte] {
+        let char = self.values[Int(byte)]
+        let data = char.data(using: .ascii)!
+        return [Byte](data)
+    }
+
 }
