@@ -52,25 +52,29 @@ public struct Base32Encoder: ByteArrayEncoder {
             output.append(contentsOf: map(carry | (byte & bitMask)))
         }
 
+        func setCarry(_ byte: Byte, _ bitMask: Byte) {
+            carry = (byte & bitMask)
+        }
+        
         for (index, _) in block.enumerated() {
             switch index {
             case 0:
                 process( block[0] >> 3, _11111)
-                carry = (block[0] << 2) & _11100
+                setCarry(block[0] << 2, _11100)
             case 1:
                 process( block[1] >> 6, _00011, carry)
                 process( block[1] >> 1, _11111)
-                carry = (block[1] << 4) & _11100
+                setCarry(block[1] << 4, _11100)
             case 2:
                 process( block[2] >> 4, _01111, carry)
-                carry = (block[2] << 1) & _11110
+                setCarry(block[2] << 1, _11110)
             case 3:
                 process( block[3] >> 7, _00001, carry)
                 process( block[3] >> 2, _11111)
-                carry = (block[3] << 3) & _11000
+                setCarry(block[3] << 3, _11000)
             case 4:
                 process( block[4] >> 5, _00111, carry)
-                carry =  block[4] & _11111
+                setCarry(block[4]     , _11111)
             default:
                 fatalError("not implemented yet")
             }
