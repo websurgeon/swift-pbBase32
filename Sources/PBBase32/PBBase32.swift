@@ -9,3 +9,7 @@ public typealias Byte = UInt8
 public func base32Encode(data: Data) throws -> Data {
     return try Base32Encoder.encoder().encode(data: data)
 }
+
+public func base32Encode(string: String) throws -> String {
+    return try Base32Encoder.encoder().encode(string: string)
+}

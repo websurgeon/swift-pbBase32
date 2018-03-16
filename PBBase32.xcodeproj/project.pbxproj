@@ -31,6 +31,10 @@
 		D0AE7F83205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */; };
 		D0AE7F85205C7CEA00B1FB0F /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F84205C7CEA00B1FB0F /* DataEncoder.swift */; };
 		D0AE7F86205C7CEA00B1FB0F /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F84205C7CEA00B1FB0F /* DataEncoder.swift */; };
+		D0AE7F88205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */; };
+		D0AE7F89205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */; };
+		D0AE7F8B205C7F2E00B1FB0F /* StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */; };
+		D0AE7F8C205C7F2E00B1FB0F /* StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */; };
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
@@ -70,6 +74,8 @@
 		D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+EncodeBlock.swift"; sourceTree = "<group>"; };
 		D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+DataEncoder.swift"; sourceTree = "<group>"; };
 		D0AE7F84205C7CEA00B1FB0F /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
+		D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+StringEncoder.swift"; sourceTree = "<group>"; };
+		D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEncoder.swift; sourceTree = "<group>"; };
 		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				D052278C205C5DF700419A02 /* Base32Encoder */,
 				D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */,
 				D0AE7F84205C7CEA00B1FB0F /* DataEncoder.swift */,
+				D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */,
 			);
 			path = Encoder;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 				D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */,
 				D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift */,
 				D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */,
+				D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */,
 				D052278F205C5E2200419A02 /* Base32EncoderTests.swift */,
 			);
 			path = Base32Encoder;
@@ -428,7 +436,9 @@
 				D0AE7F7C205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */,
 				D0522792205C5E3800419A02 /* Base32Encoder.swift in Sources */,
 				D028B116205C610D00253ADB /* Alphabet.swift in Sources */,
+				D0AE7F88205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */,
 				D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */,
+				D0AE7F8B205C7F2E00B1FB0F /* StringEncoder.swift in Sources */,
 				D0AE7F7F205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift in Sources */,
 				D0AE7F82205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift in Sources */,
 			);
@@ -444,7 +454,9 @@
 				D0AE7F7D205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */,
 				D0522797205C5EB000419A02 /* ByteArrayEncoder.swift in Sources */,
 				D028B117205C61BB00253ADB /* Alphabet.swift in Sources */,
+				D0AE7F89205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */,
 				D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */,
+				D0AE7F8C205C7F2E00B1FB0F /* StringEncoder.swift in Sources */,
 				D0AE7F80205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift in Sources */,
 				D0AE7F83205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift in Sources */,
 			);
