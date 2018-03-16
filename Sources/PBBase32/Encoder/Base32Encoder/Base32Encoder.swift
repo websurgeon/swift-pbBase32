@@ -4,6 +4,7 @@
 
 import Foundation
 
+private let noMask: Byte = 0x0
 private let _11111: Byte = 0x1f
 private let _11100: Byte = 0x1c
 private let _00011: Byte = 0x03
@@ -80,7 +81,7 @@ public struct Base32Encoder: ByteArrayEncoder {
             }
         }
         
-        output.append(contentsOf: map(carry))
+        process(0x0, noMask, carry)
 
         return output
     }
