@@ -11,6 +11,14 @@
 		D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522736205B030800419A02 /* PBBase32Tests.swift */; };
 		D052274C205B294A00419A02 /* PBBase32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AEECE8205A6906001D8EF6 /* PBBase32.framework */; };
 		D0522752205B295500419A02 /* PBBase32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522736205B030800419A02 /* PBBase32Tests.swift */; };
+		D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */; };
+		D0522792205C5E3800419A02 /* Base32Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522791205C5E3800419A02 /* Base32Encoder.swift */; };
+		D0522794205C5EAA00419A02 /* Base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052278F205C5E2200419A02 /* Base32EncoderTests.swift */; };
+		D0522795205C5EAB00419A02 /* Base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052278F205C5E2200419A02 /* Base32EncoderTests.swift */; };
+		D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522791205C5E3800419A02 /* Base32Encoder.swift */; };
+		D0522797205C5EB000419A02 /* ByteArrayEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */; };
+		D0522799205C5EF200419A02 /* PBBase32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522798205C5EF200419A02 /* PBBase32.swift */; };
+		D052279A205C5EF200419A02 /* PBBase32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522798205C5EF200419A02 /* PBBase32.swift */; };
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
@@ -40,6 +48,10 @@
 		D0522738205B030800419A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0522747205B294A00419A02 /* PBBase32Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D052274B205B294A00419A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteArrayEncoder.swift; sourceTree = "<group>"; };
+		D052278F205C5E2200419A02 /* Base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32EncoderTests.swift; sourceTree = "<group>"; };
+		D0522791205C5E3800419A02 /* Base32Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Encoder.swift; sourceTree = "<group>"; };
+		D0522798205C5EF200419A02 /* PBBase32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBBase32.swift; sourceTree = "<group>"; };
 		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -96,6 +108,8 @@
 		D0522741205B032A00419A02 /* PBBase32 */ = {
 			isa = PBXGroup;
 			children = (
+				D052278B205C5DF700419A02 /* Encoder */,
+				D0522798205C5EF200419A02 /* PBBase32.swift */,
 				D0522736205B030800419A02 /* PBBase32Tests.swift */,
 			);
 			path = PBBase32;
@@ -107,6 +121,24 @@
 				D052274B205B294A00419A02 /* Info.plist */,
 			);
 			path = "PBBase32Tests-iOS";
+			sourceTree = "<group>";
+		};
+		D052278B205C5DF700419A02 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				D052278C205C5DF700419A02 /* Base32Encoder */,
+				D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		D052278C205C5DF700419A02 /* Base32Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				D0522791205C5E3800419A02 /* Base32Encoder.swift */,
+				D052278F205C5E2200419A02 /* Base32EncoderTests.swift */,
+			);
+			path = Base32Encoder;
 			sourceTree = "<group>";
 		};
 		D0AEECDC205A67B0001D8EF6 = {
@@ -332,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0522794205C5EAA00419A02 /* Base32EncoderTests.swift in Sources */,
 				D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0522795205C5EAB00419A02 /* Base32EncoderTests.swift in Sources */,
 				D0522752205B295500419A02 /* PBBase32Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0522799205C5EF200419A02 /* PBBase32.swift in Sources */,
+				D0522792205C5E3800419A02 /* Base32Encoder.swift in Sources */,
+				D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D052279A205C5EF200419A02 /* PBBase32.swift in Sources */,
+				D0522797205C5EB000419A02 /* ByteArrayEncoder.swift in Sources */,
+				D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +417,7 @@
 		D052273C205B030800419A02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -443,6 +484,7 @@
 		D052273D205B030800419A02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -501,6 +543,7 @@
 		D0522750205B294A00419A02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -567,6 +610,7 @@
 		D0522751205B294A00419A02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
