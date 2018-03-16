@@ -21,9 +21,9 @@ class Base32EncoderTests: XCTestCase {
         assert(encoder: sut, encodes: "1", to: "GE======")
     }
 
-//    func test_encode_2Bytes() {
-//        assert(encoder: sut, encodes: "12", to: "GEZA====")
-//    }
+    func test_encode_2Bytes() {
+        assert(encoder: sut, encodes: "12", to: "GEZA====")
+    }
 //
 //    func test_encode_3Bytes() {
 //        assert(encoder: sut, encodes: "123", to: "GEZDG===")
