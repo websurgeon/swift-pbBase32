@@ -48,25 +48,29 @@ public struct Base32Encoder: ByteArrayEncoder {
         var output = [Byte]()
         var carry: Byte = 0x0
 
+        func process(_ byte: Byte, _ bitMask: Byte, _ carry: Byte = 0x0) {
+            output.append(contentsOf: map(carry | (byte & bitMask)))
+        }
+
         for (index, _) in block.enumerated() {
             switch index {
             case 0:
-                output.append(contentsOf: map((block[0] >> 3) & _11111))
+                process( block[0] >> 3, _11111)
                 carry = (block[0] << 2) & _11100
             case 1:
-                output.append(contentsOf: map(carry | (block[1] >> 6) & _00011))
-                output.append(contentsOf: map((block[1] >> 1) & _11111))
+                process( block[1] >> 6, _00011, carry)
+                process( block[1] >> 1, _11111)
                 carry = (block[1] << 4) & _11100
             case 2:
-                output.append(contentsOf: map(carry | (block[2] >> 4) & _01111))
+                process( block[2] >> 4, _01111, carry)
                 carry = (block[2] << 1) & _11110
             case 3:
-                output.append(contentsOf: map(carry | (block[3] >> 7) & _00001))
-                output.append(contentsOf: map((block[3] >> 2) & _11111))
+                process( block[3] >> 7, _00001, carry)
+                process( block[3] >> 2, _11111)
                 carry = (block[3] << 3) & _11000
             case 4:
-                output.append(contentsOf: map(carry | (block[4] >> 5) & _00111))
-                carry = block[4] & _11111
+                process( block[4] >> 5, _00111, carry)
+                carry =  block[4] & _11111
             default:
                 fatalError("not implemented yet")
             }
