@@ -33,10 +33,10 @@ class Base32EncoderTests: XCTestCase {
         assert(encoder: sut, encodes: "1234", to: "GEZDGNA=")
     }
 
-//    func test_encode_5Bytes() {
-//        assert(encoder: sut, encodes: "12345", to: "GEZDGNBV")
-//    }
-//
+    func test_encode_5Bytes() {
+        assert(encoder: sut, encodes: "12345", to: "GEZDGNBV")
+    }
+
 //    func test_encode_6Byte() {
 //        assert(encoder: sut, encodes: "123456", to: "GEZDGNBVGY======")
 //    }
