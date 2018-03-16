@@ -4,17 +4,6 @@
 
 import Foundation
 
-private let noMask: Byte = 0x0
-private let _11111: Byte = 0x1f
-private let _11100: Byte = 0x1c
-private let _00011: Byte = 0x03
-private let _10000: Byte = 0x10
-private let _01111: Byte = 0x0f
-private let _11110: Byte = 0x1e
-private let _00001: Byte = 0x01
-private let _11000: Byte = 0x18
-private let _00111: Byte = 0x07
-
 public struct Base32Encoder: ByteArrayEncoder {
     private let alphabet: Alphabet
 
@@ -49,39 +38,39 @@ public struct Base32Encoder: ByteArrayEncoder {
         var output = [Byte]()
         var carry: Byte = 0x0
 
-        func process(_ byte: Byte, _ bitMask: Byte, _ carry: Byte = 0x0) {
-            output.append(contentsOf: alphabet.map(carry | (byte & bitMask)))
+        func process(_ byte: Byte, _ bitMask: BitMask, _ carry: Byte = 0x0) {
+            output.append(contentsOf: alphabet.map(carry | bitMask.mask(byte)))
         }
 
-        func setCarry(_ byte: Byte, _ bitMask: Byte) {
-            carry = (byte & bitMask)
+        func setCarry(_ byte: Byte, _ bitMask: BitMask) {
+            carry = bitMask.mask(byte)
         }
         
         for (index, _) in block.enumerated() {
             switch index {
             case 0:
-                process( block[0] >> 3, _11111)
-                setCarry(block[0] << 2, _11100)
+                process( block[0] >> 3, ._11111)
+                setCarry(block[0] << 2, ._11100)
             case 1:
-                process( block[1] >> 6, _00011, carry)
-                process( block[1] >> 1, _11111)
-                setCarry(block[1] << 4, _11100)
+                process( block[1] >> 6, ._00011, carry)
+                process( block[1] >> 1, ._11111)
+                setCarry(block[1] << 4, ._11100)
             case 2:
-                process( block[2] >> 4, _01111, carry)
-                setCarry(block[2] << 1, _11110)
+                process( block[2] >> 4, ._01111, carry)
+                setCarry(block[2] << 1, ._11110)
             case 3:
-                process( block[3] >> 7, _00001, carry)
-                process( block[3] >> 2, _11111)
-                setCarry(block[3] << 3, _11000)
+                process( block[3] >> 7, ._00001, carry)
+                process( block[3] >> 2, ._11111)
+                setCarry(block[3] << 3, ._11000)
             case 4:
-                process( block[4] >> 5, _00111, carry)
-                setCarry(block[4]     , _11111)
+                process( block[4] >> 5, ._00111, carry)
+                setCarry(block[4]     , ._11111)
             default:
                 fatalError("not implemented yet")
             }
         }
         
-        process(0x0, noMask, carry)
+        process(0x0, .noMask, carry)
 
         return output
     }
@@ -107,4 +96,21 @@ private func paddingForInput(size: Int, paddingChar: String) -> [Byte] {
     }
     let paddingData = padding.data(using: .ascii)!
     return [Byte](paddingData)
+}
+
+private enum BitMask: Byte {
+    case noMask = 0x0
+    case _11111 = 0x1f
+    case _11100 = 0x1c
+    case _00011 = 0x03
+    case _10000 = 0x10
+    case _01111 = 0x0f
+    case _11110 = 0x1e
+    case _00001 = 0x01
+    case _11000 = 0x18
+    case _00111 = 0x07
+    
+    func mask(_ byte: Byte) -> Byte {
+        return byte & self.rawValue
+    }
 }
