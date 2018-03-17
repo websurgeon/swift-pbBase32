@@ -8,8 +8,8 @@ public struct Alphabet {
     public let values: [String]
     public let padding: String
     
-    public init(_ alphabet: [String], padding: String) {
-        self.values = alphabet
+    public init(_ values: [String], padding: String) {
+        self.values = values
         self.padding = padding
     }
     

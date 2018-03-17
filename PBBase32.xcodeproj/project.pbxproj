@@ -35,6 +35,8 @@
 		D0AE7F89205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */; };
 		D0AE7F8B205C7F2E00B1FB0F /* StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */; };
 		D0AE7F8C205C7F2E00B1FB0F /* StringEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */; };
+		D0AE7F94205D190E00B1FB0F /* AlphabetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F93205D190E00B1FB0F /* AlphabetTests.swift */; };
+		D0AE7F95205D190E00B1FB0F /* AlphabetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F93205D190E00B1FB0F /* AlphabetTests.swift */; };
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
@@ -76,6 +78,7 @@
 		D0AE7F84205C7CEA00B1FB0F /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+StringEncoder.swift"; sourceTree = "<group>"; };
 		D0AE7F8A205C7F2E00B1FB0F /* StringEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEncoder.swift; sourceTree = "<group>"; };
+		D0AE7F93205D190E00B1FB0F /* AlphabetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetTests.swift; sourceTree = "<group>"; };
 		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D028B115205C610C00253ADB /* Alphabet.swift */,
+				D0AE7F93205D190E00B1FB0F /* AlphabetTests.swift */,
 			);
 			path = Alphabet;
 			sourceTree = "<group>";
@@ -412,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AE7F95205D190E00B1FB0F /* AlphabetTests.swift in Sources */,
 				D0522794205C5EAA00419A02 /* Base32EncoderTests.swift in Sources */,
 				D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */,
 			);
@@ -421,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AE7F94205D190E00B1FB0F /* AlphabetTests.swift in Sources */,
 				D0522795205C5EAB00419A02 /* Base32EncoderTests.swift in Sources */,
 				D0522752205B295500419A02 /* PBBase32Tests.swift in Sources */,
 			);
