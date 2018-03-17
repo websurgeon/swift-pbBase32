@@ -139,6 +139,7 @@
 				D0AE7F91205D15DA00B1FB0F /* macOS */,
 				D0522798205C5EF200419A02 /* PBBase32.swift */,
 				D0522736205B030800419A02 /* PBBase32Tests.swift */,
+				D0AEED0A205A70EC001D8EF6 /* PBBase32.h */,
 			);
 			path = PBBase32;
 			sourceTree = "<group>";
@@ -219,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				D0522741205B032A00419A02 /* PBBase32 */,
-				D0AEED0A205A70EC001D8EF6 /* PBBase32.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
