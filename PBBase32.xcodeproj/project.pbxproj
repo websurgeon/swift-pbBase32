@@ -21,8 +21,6 @@
 		D0522797205C5EB000419A02 /* ByteArrayEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */; };
 		D0522799205C5EF200419A02 /* PBBase32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522798205C5EF200419A02 /* PBBase32.swift */; };
 		D052279A205C5EF200419A02 /* PBBase32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0522798205C5EF200419A02 /* PBBase32.swift */; };
-		D0AE7F79205C7A2600B1FB0F /* BitMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F78205C7A2600B1FB0F /* BitMask.swift */; };
-		D0AE7F7A205C7A2600B1FB0F /* BitMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F78205C7A2600B1FB0F /* BitMask.swift */; };
 		D0AE7F7C205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */; };
 		D0AE7F7D205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */; };
 		D0AE7F7F205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift */; };
@@ -71,7 +69,6 @@
 		D052278F205C5E2200419A02 /* Base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32EncoderTests.swift; sourceTree = "<group>"; };
 		D0522791205C5E3800419A02 /* Base32Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Encoder.swift; sourceTree = "<group>"; };
 		D0522798205C5EF200419A02 /* PBBase32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBBase32.swift; sourceTree = "<group>"; };
-		D0AE7F78205C7A2600B1FB0F /* BitMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitMask.swift; sourceTree = "<group>"; };
 		D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+Padding.swift"; sourceTree = "<group>"; };
 		D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+EncodeBlock.swift"; sourceTree = "<group>"; };
 		D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+DataEncoder.swift"; sourceTree = "<group>"; };
@@ -137,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				D028B114205C610C00253ADB /* Alphabet */,
-				D0AE7F77205C7A2600B1FB0F /* BitMask */,
 				D052278B205C5DF700419A02 /* Encoder */,
 				D0AE7F8F205D156300B1FB0F /* iOS */,
 				D0AE7F91205D15DA00B1FB0F /* macOS */,
@@ -170,14 +166,6 @@
 				D052278F205C5E2200419A02 /* Base32EncoderTests.swift */,
 			);
 			path = Base32Encoder;
-			sourceTree = "<group>";
-		};
-		D0AE7F77205C7A2600B1FB0F /* BitMask */ = {
-			isa = PBXGroup;
-			children = (
-				D0AE7F78205C7A2600B1FB0F /* BitMask.swift */,
-			);
-			path = BitMask;
 			sourceTree = "<group>";
 		};
 		D0AE7F8F205D156300B1FB0F /* iOS */ = {
@@ -436,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AE7F79205C7A2600B1FB0F /* BitMask.swift in Sources */,
 				D0522799205C5EF200419A02 /* PBBase32.swift in Sources */,
 				D0AE7F85205C7CEA00B1FB0F /* DataEncoder.swift in Sources */,
 				D0AE7F7C205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */,
@@ -454,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AE7F7A205C7A2600B1FB0F /* BitMask.swift in Sources */,
 				D052279A205C5EF200419A02 /* PBBase32.swift in Sources */,
 				D0AE7F86205C7CEA00B1FB0F /* DataEncoder.swift in Sources */,
 				D0AE7F7D205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */,
