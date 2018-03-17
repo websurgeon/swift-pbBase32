@@ -53,6 +53,8 @@
 		D0AE7FC1205DAC2D00B1FB0F /* StringDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FA1205D952200B1FB0F /* StringDecoder.swift */; };
 		D0AE7FC2205DAC6400B1FB0F /* Base32Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FBC205DAB9A00B1FB0F /* Base32Decoder.swift */; };
 		D0AE7FC3205DAC6500B1FB0F /* Base32Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FBC205DAB9A00B1FB0F /* Base32Decoder.swift */; };
+		D0AE7FCA205DB82B00B1FB0F /* Base32Decoder+DecodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FC7205DB7BC00B1FB0F /* Base32Decoder+DecodeBlock.swift */; };
+		D0AE7FCB205DB82C00B1FB0F /* Base32Decoder+DecodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FC7205DB7BC00B1FB0F /* Base32Decoder+DecodeBlock.swift */; };
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
@@ -103,6 +105,7 @@
 		D0AE7FB6205DAAFD00B1FB0F /* Base32DecoderTests+AssertDecoderTestVectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32DecoderTests+AssertDecoderTestVectors.swift"; sourceTree = "<group>"; };
 		D0AE7FB7205DAAFD00B1FB0F /* Base32DecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32DecoderTests.swift; sourceTree = "<group>"; };
 		D0AE7FBC205DAB9A00B1FB0F /* Base32Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Decoder.swift; sourceTree = "<group>"; };
+		D0AE7FC7205DB7BC00B1FB0F /* Base32Decoder+DecodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Decoder+DecodeBlock.swift"; sourceTree = "<group>"; };
 		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -240,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				D0AE7FBC205DAB9A00B1FB0F /* Base32Decoder.swift */,
+				D0AE7FC7205DB7BC00B1FB0F /* Base32Decoder+DecodeBlock.swift */,
 				D0AE7FB7205DAAFD00B1FB0F /* Base32DecoderTests.swift */,
 				D0AE7FB6205DAAFD00B1FB0F /* Base32DecoderTests+AssertDecoderTestVectors.swift */,
 			);
@@ -505,6 +509,7 @@
 				D0AE7F88205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */,
 				D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */,
 				D0AE7F8B205C7F2E00B1FB0F /* StringEncoder.swift in Sources */,
+				D0AE7FCB205DB82C00B1FB0F /* Base32Decoder+DecodeBlock.swift in Sources */,
 				D0AE7F7F205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift in Sources */,
 				D0AE7F82205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift in Sources */,
 				D0AE7FA4205D952200B1FB0F /* StringDecoder.swift in Sources */,
@@ -526,6 +531,7 @@
 				D0AE7FC1205DAC2D00B1FB0F /* StringDecoder.swift in Sources */,
 				D0AE7FBF205DAC2300B1FB0F /* ByteArrayDecoder.swift in Sources */,
 				D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */,
+				D0AE7FCA205DB82B00B1FB0F /* Base32Decoder+DecodeBlock.swift in Sources */,
 				D0AE7F8C205C7F2E00B1FB0F /* StringEncoder.swift in Sources */,
 				D0AE7F80205C7BB300B1FB0F /* Base32Encoder+EncodeBlock.swift in Sources */,
 				D0AE7F83205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift in Sources */,

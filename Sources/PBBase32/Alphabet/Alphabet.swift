@@ -27,4 +27,15 @@ public struct Alphabet {
         return [Byte](data)
     }
 
+    public func index(of byte: Byte) -> Int? {
+        guard let char: String = String(bytes: [byte], encoding: .ascii) else {
+            return nil
+        }
+        
+        guard let index = self.values.index(of: char) else {
+            return nil
+        }
+        
+        return index
+    }
 }
