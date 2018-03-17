@@ -62,9 +62,9 @@
 		D028B115205C610C00253ADB /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
 		D0522734205B030800419A02 /* PBBase32Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0522736205B030800419A02 /* PBBase32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBBase32Tests.swift; sourceTree = "<group>"; };
-		D0522738205B030800419A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0522738205B030800419A02 /* Info-macOS-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS-Tests.plist"; sourceTree = "<group>"; };
 		D0522747205B294A00419A02 /* PBBase32Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D052274B205B294A00419A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D052274B205B294A00419A02 /* Info-iOS-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS-Tests.plist"; sourceTree = "<group>"; };
 		D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteArrayEncoder.swift; sourceTree = "<group>"; };
 		D052278F205C5E2200419A02 /* Base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32EncoderTests.swift; sourceTree = "<group>"; };
 		D0522791205C5E3800419A02 /* Base32Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Encoder.swift; sourceTree = "<group>"; };
@@ -129,14 +129,6 @@
 			path = Alphabet;
 			sourceTree = "<group>";
 		};
-		D0522735205B030800419A02 /* PBBase32Tests-macOS */ = {
-			isa = PBXGroup;
-			children = (
-				D0522738205B030800419A02 /* Info.plist */,
-			);
-			path = "PBBase32Tests-macOS";
-			sourceTree = "<group>";
-		};
 		D0522741205B032A00419A02 /* PBBase32 */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,14 +139,6 @@
 				D0522736205B030800419A02 /* PBBase32Tests.swift */,
 			);
 			path = PBBase32;
-			sourceTree = "<group>";
-		};
-		D0522748205B294A00419A02 /* PBBase32Tests-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D052274B205B294A00419A02 /* Info.plist */,
-			);
-			path = "PBBase32Tests-iOS";
 			sourceTree = "<group>";
 		};
 		D052278B205C5DF700419A02 /* Encoder */ = {
@@ -196,8 +180,6 @@
 				D0AEED0F205A7AF9001D8EF6 /* README.md */,
 				D0AEED19205A7F8A001D8EF6 /* LICENSE.txt */,
 				D0AEED04205A6B87001D8EF6 /* Sources */,
-				D0522735205B030800419A02 /* PBBase32Tests-macOS */,
-				D0522748205B294A00419A02 /* PBBase32Tests-iOS */,
 				D0AEECE9205A6906001D8EF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -220,6 +202,8 @@
 				D0AEED0A205A70EC001D8EF6 /* PBBase32.h */,
 				D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */,
 				D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */,
+				D0522738205B030800419A02 /* Info-macOS-Tests.plist */,
+				D052274B205B294A00419A02 /* Info-iOS-Tests.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -531,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32Tests-macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -592,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32Tests-macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -656,7 +640,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32Tests-iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS-Tests.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -717,7 +701,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PBBase32Tests-iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS-Tests.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
