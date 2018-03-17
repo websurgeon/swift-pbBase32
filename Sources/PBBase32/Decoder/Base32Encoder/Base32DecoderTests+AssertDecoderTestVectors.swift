@@ -5,19 +5,20 @@
 import XCTest
 @testable import PBBase32
 
-extension Base32EncoderTests {
+extension Base32DecoderTests {
     
-    func assertEncoder(_ encoder: ByteArrayEncoder, passes testVectorName: Base32TestVector,
-                inFile filePath: String = #file,
-                atLine lineNumber: Int = #line) {
+    func assertDecoder(_ decoder: ByteArrayDecoder, passes testVectorName: Base32TestVector,
+                       inFile filePath: String = #file,
+                       atLine lineNumber: Int = #line) {
+        
         let vector = TestVectors.base32[testVectorName]!
-        let input = [Byte](vector.decoded.utf8Data)
-        let output = vector.encoded
+        let input = [Byte](vector.encoded.utf8Data)
+        let output = vector.decoded
         
         do {
-            let encoded = try encoder.encode(bytes: input)
+            let result = try decoder.decode(bytes: input)
             
-            if let string = String(data: Data(encoded), encoding: .ascii) {
+            if let string = String(data: Data(result), encoding: .utf8) {
                 if string != output {
                     recordFailure(withDescription: "got '\(string)', expected '\(output)'",
                         inFile: filePath,
@@ -25,7 +26,7 @@ extension Base32EncoderTests {
                         expected: true)
                 }
             } else {
-                recordFailure(withDescription: "got data'\(Data(encoded).hexDescription)', expected '\(output.data(using: .ascii)!.hexDescription)'",
+                recordFailure(withDescription: "got data'\(Data(result).hexDescription)', expected '\(output.utf8Data.hexDescription)'",
                     inFile: filePath,
                     atLine: lineNumber,
                     expected: true)
