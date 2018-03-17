@@ -24,4 +24,21 @@ class PBBase32Tests: XCTestCase {
         XCTAssertEqual(encoded,
                        "KRUGS4ZANFZSA5DIMUQGQ33VONSSA5DIMF2CA2TBMNVSAYTVNFWGI===")
     }
+    
+    func test_base32Decode_data() {
+        let data = "KRUGS4ZANFZSA5DIMUQGQ33VONSSA5DIMF2CA2TBMNVSAYTVNFWGI===".data(using: .utf8)!
+        
+        let decoded = try! base32Decode(data: data)
+        
+        XCTAssertEqual(String(data: decoded, encoding: .utf8),
+                       "This is the house that jack build")
+    }
+    
+    func test_base32Decode_string() {
+        let string = "KRUGS4ZANFZSA5DIMUQGQ33VONSSA5DIMF2CA2TBMNVSAYTVNFWGI==="
+        
+        let decoded = try! base32Decode(string: string)
+        
+        XCTAssertEqual(decoded, "This is the house that jack build")
+    }
 }
