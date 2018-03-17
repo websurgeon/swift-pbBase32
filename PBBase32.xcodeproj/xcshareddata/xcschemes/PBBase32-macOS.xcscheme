@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0522733205B030800419A02"
-               BuildableName = "PBBase32Tests-macOS.xctest"
-               BlueprintName = "PBBase32Tests-macOS"
+               BuildableName = "PBBase32-macOS-Tests.xctest"
+               BlueprintName = "PBBase32-macOS-Tests"
                ReferencedContainer = "container:PBBase32.xcodeproj">
             </BuildableReference>
          </TestableReference>

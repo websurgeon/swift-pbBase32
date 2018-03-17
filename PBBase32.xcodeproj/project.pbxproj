@@ -60,10 +60,10 @@
 
 /* Begin PBXFileReference section */
 		D028B115205C610C00253ADB /* Alphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
-		D0522734205B030800419A02 /* PBBase32Tests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0522734205B030800419A02 /* PBBase32-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0522736205B030800419A02 /* PBBase32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBBase32Tests.swift; sourceTree = "<group>"; };
 		D0522738205B030800419A02 /* Info-macOS-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS-Tests.plist"; sourceTree = "<group>"; };
-		D0522747205B294A00419A02 /* PBBase32Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0522747205B294A00419A02 /* PBBase32-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBBase32-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D052274B205B294A00419A02 /* Info-iOS-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS-Tests.plist"; sourceTree = "<group>"; };
 		D052278D205C5DF700419A02 /* ByteArrayEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteArrayEncoder.swift; sourceTree = "<group>"; };
 		D052278F205C5E2200419A02 /* Base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32EncoderTests.swift; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 			children = (
 				D0AEECE8205A6906001D8EF6 /* PBBase32.framework */,
 				D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */,
-				D0522734205B030800419A02 /* PBBase32Tests-macOS.xctest */,
-				D0522747205B294A00419A02 /* PBBase32Tests-iOS.xctest */,
+				D0522734205B030800419A02 /* PBBase32-macOS-Tests.xctest */,
+				D0522747205B294A00419A02 /* PBBase32-iOS-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,9 +239,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D0522733205B030800419A02 /* PBBase32Tests-macOS */ = {
+		D0522733205B030800419A02 /* PBBase32-macOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D052273E205B030800419A02 /* Build configuration list for PBXNativeTarget "PBBase32Tests-macOS" */;
+			buildConfigurationList = D052273E205B030800419A02 /* Build configuration list for PBXNativeTarget "PBBase32-macOS-Tests" */;
 			buildPhases = (
 				D0522730205B030800419A02 /* Sources */,
 				D0522731205B030800419A02 /* Frameworks */,
@@ -252,14 +252,14 @@
 			dependencies = (
 				D052273B205B030800419A02 /* PBXTargetDependency */,
 			);
-			name = "PBBase32Tests-macOS";
+			name = "PBBase32-macOS-Tests";
 			productName = "PBBase32Tests-macOS";
-			productReference = D0522734205B030800419A02 /* PBBase32Tests-macOS.xctest */;
+			productReference = D0522734205B030800419A02 /* PBBase32-macOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D0522746205B294A00419A02 /* PBBase32Tests-iOS */ = {
+		D0522746205B294A00419A02 /* PBBase32-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D052274F205B294A00419A02 /* Build configuration list for PBXNativeTarget "PBBase32Tests-iOS" */;
+			buildConfigurationList = D052274F205B294A00419A02 /* Build configuration list for PBXNativeTarget "PBBase32-iOS-Tests" */;
 			buildPhases = (
 				D0522743205B294A00419A02 /* Sources */,
 				D0522744205B294A00419A02 /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				D052274E205B294A00419A02 /* PBXTargetDependency */,
 			);
-			name = "PBBase32Tests-iOS";
+			name = "PBBase32-iOS-Tests";
 			productName = "PBBase32Tests-iOS";
-			productReference = D0522747205B294A00419A02 /* PBBase32Tests-iOS.xctest */;
+			productReference = D0522747205B294A00419A02 /* PBBase32-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0AEECE7205A6906001D8EF6 /* PBBase32-iOS */ = {
@@ -351,9 +351,9 @@
 			projectRoot = "";
 			targets = (
 				D0AEECE7205A6906001D8EF6 /* PBBase32-iOS */,
+				D0522746205B294A00419A02 /* PBBase32-iOS-Tests */,
 				D0AEECF5205A69C0001D8EF6 /* PBBase32-macOS */,
-				D0522733205B030800419A02 /* PBBase32Tests-macOS */,
-				D0522746205B294A00419A02 /* PBBase32Tests-iOS */,
+				D0522733205B030800419A02 /* PBBase32-macOS-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -520,7 +520,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -580,7 +580,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-macOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -645,7 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -705,7 +705,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.peter-barclay.PBBase32-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1019,7 +1019,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D052273E205B030800419A02 /* Build configuration list for PBXNativeTarget "PBBase32Tests-macOS" */ = {
+		D052273E205B030800419A02 /* Build configuration list for PBXNativeTarget "PBBase32-macOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D052273C205B030800419A02 /* Debug */,
@@ -1028,7 +1028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D052274F205B294A00419A02 /* Build configuration list for PBXNativeTarget "PBBase32Tests-iOS" */ = {
+		D052274F205B294A00419A02 /* Build configuration list for PBXNativeTarget "PBBase32-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0522750205B294A00419A02 /* Debug */,

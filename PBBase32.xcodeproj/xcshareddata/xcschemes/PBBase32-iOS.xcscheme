@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0522746205B294A00419A02"
-               BuildableName = "PBBase32Tests-iOS.xctest"
-               BlueprintName = "PBBase32Tests-iOS"
+               BuildableName = "PBBase32-iOS-Tests.xctest"
+               BlueprintName = "PBBase32-iOS-Tests"
                ReferencedContainer = "container:PBBase32.xcodeproj">
             </BuildableReference>
          </TestableReference>
