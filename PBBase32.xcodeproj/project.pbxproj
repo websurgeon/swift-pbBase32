@@ -132,9 +132,11 @@
 		D0522741205B032A00419A02 /* PBBase32 */ = {
 			isa = PBXGroup;
 			children = (
-				D0AE7F77205C7A2600B1FB0F /* BitMask */,
 				D028B114205C610C00253ADB /* Alphabet */,
+				D0AE7F77205C7A2600B1FB0F /* BitMask */,
 				D052278B205C5DF700419A02 /* Encoder */,
+				D0AE7F8F205D156300B1FB0F /* iOS */,
+				D0AE7F91205D15DA00B1FB0F /* macOS */,
 				D0522798205C5EF200419A02 /* PBBase32.swift */,
 				D0522736205B030800419A02 /* PBBase32Tests.swift */,
 			);
@@ -173,6 +175,24 @@
 			path = BitMask;
 			sourceTree = "<group>";
 		};
+		D0AE7F8F205D156300B1FB0F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */,
+				D052274B205B294A00419A02 /* Info-iOS-Tests.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D0AE7F91205D15DA00B1FB0F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */,
+				D0522738205B030800419A02 /* Info-macOS-Tests.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
 		D0AEECDC205A67B0001D8EF6 = {
 			isa = PBXGroup;
 			children = (
@@ -200,10 +220,6 @@
 			children = (
 				D0522741205B032A00419A02 /* PBBase32 */,
 				D0AEED0A205A70EC001D8EF6 /* PBBase32.h */,
-				D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */,
-				D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */,
-				D0522738205B030800419A02 /* Info-macOS-Tests.plist */,
-				D052274B205B294A00419A02 /* Info-iOS-Tests.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -515,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS-Tests.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/macOS/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -576,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS-Tests.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/macOS/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -640,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS-Tests.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/iOS/Info-iOS-Tests.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -701,7 +717,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS-Tests.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/iOS/Info-iOS-Tests.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -788,7 +804,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/iOS/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -856,7 +872,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/iOS/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -931,7 +947,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/macOS/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1000,7 +1016,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = "Sources/PBBase32/macOS/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
