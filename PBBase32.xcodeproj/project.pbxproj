@@ -38,6 +38,12 @@
 		D0AE7FA3205D952200B1FB0F /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FA0205D952200B1FB0F /* DataDecoder.swift */; };
 		D0AE7FA4205D952200B1FB0F /* StringDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FA1205D952200B1FB0F /* StringDecoder.swift */; };
 		D0AE7FA5205D952200B1FB0F /* ByteArrayDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FA2205D952200B1FB0F /* ByteArrayDecoder.swift */; };
+		D0AE7FAC205D97F100B1FB0F /* TestVectors+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FAB205D97F100B1FB0F /* TestVectors+Base32.swift */; };
+		D0AE7FAD205D97F100B1FB0F /* TestVectors+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FAB205D97F100B1FB0F /* TestVectors+Base32.swift */; };
+		D0AE7FAF205DA78200B1FB0F /* TestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FAE205DA78200B1FB0F /* TestVector.swift */; };
+		D0AE7FB0205DA78200B1FB0F /* TestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FAE205DA78200B1FB0F /* TestVector.swift */; };
+		D0AE7FB2205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FB1205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift */; };
+		D0AE7FB3205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7FB1205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift */; };
 		D0AEED0B205A70EC001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED0C205A72A4001D8EF6 /* PBBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEED0A205A70EC001D8EF6 /* PBBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AEED1E205AF850001D8EF6 /* base32-process-notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */; };
@@ -82,6 +88,9 @@
 		D0AE7FA0205D952200B1FB0F /* DataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		D0AE7FA1205D952200B1FB0F /* StringDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDecoder.swift; sourceTree = "<group>"; };
 		D0AE7FA2205D952200B1FB0F /* ByteArrayDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteArrayDecoder.swift; sourceTree = "<group>"; };
+		D0AE7FAB205D97F100B1FB0F /* TestVectors+Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestVectors+Base32.swift"; sourceTree = "<group>"; };
+		D0AE7FAE205DA78200B1FB0F /* TestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVector.swift; sourceTree = "<group>"; };
+		D0AE7FB1205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32EncoderTests+AssertEncoderTestVectors.swift"; sourceTree = "<group>"; };
 		D0AEECE8205A6906001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEECF6205A69C0001D8EF6 /* PBBase32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBBase32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -142,6 +151,7 @@
 				D028B114205C610C00253ADB /* Alphabet */,
 				D0AE7F9F205D94C800B1FB0F /* Decoder */,
 				D052278B205C5DF700419A02 /* Encoder */,
+				D0AE7FAA205D97BE00B1FB0F /* TestVectors */,
 				D0AE7F8F205D156300B1FB0F /* iOS */,
 				D0AE7F91205D15DA00B1FB0F /* macOS */,
 				D0522798205C5EF200419A02 /* PBBase32.swift */,
@@ -171,6 +181,7 @@
 				D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */,
 				D0AE7F87205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift */,
 				D052278F205C5E2200419A02 /* Base32EncoderTests.swift */,
+				D0AE7FB1205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift */,
 			);
 			path = Base32Encoder;
 			sourceTree = "<group>";
@@ -201,6 +212,15 @@
 				D0AE7FA1205D952200B1FB0F /* StringDecoder.swift */,
 			);
 			path = Decoder;
+			sourceTree = "<group>";
+		};
+		D0AE7FAA205D97BE00B1FB0F /* TestVectors */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE7FAE205DA78200B1FB0F /* TestVector.swift */,
+				D0AE7FAB205D97F100B1FB0F /* TestVectors+Base32.swift */,
+			);
+			path = TestVectors;
 			sourceTree = "<group>";
 		};
 		D0AEECDC205A67B0001D8EF6 = {
@@ -421,8 +441,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AE7FB0205DA78200B1FB0F /* TestVector.swift in Sources */,
+				D0AE7FAD205D97F100B1FB0F /* TestVectors+Base32.swift in Sources */,
 				D0AE7F95205D190E00B1FB0F /* AlphabetTests.swift in Sources */,
 				D0522794205C5EAA00419A02 /* Base32EncoderTests.swift in Sources */,
+				D0AE7FB3205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift in Sources */,
 				D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +454,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AE7FAF205DA78200B1FB0F /* TestVector.swift in Sources */,
+				D0AE7FAC205D97F100B1FB0F /* TestVectors+Base32.swift in Sources */,
 				D0AE7F94205D190E00B1FB0F /* AlphabetTests.swift in Sources */,
 				D0522795205C5EAB00419A02 /* Base32EncoderTests.swift in Sources */,
+				D0AE7FB2205DA80C00B1FB0F /* Base32EncoderTests+AssertEncoderTestVectors.swift in Sources */,
 				D0522752205B295500419A02 /* PBBase32Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
