@@ -6,7 +6,7 @@ import Foundation
 
 public enum Base32DecoderError: Error {
     case invalidInput(size: Int)
-    case invalidByte(byte: UInt8, index: Int, processedOutput: Data)
+    case invalidByte(byte: UInt8, index: Int, processedOutput: [Byte])
 }
 
 public struct Base32Decoder: ByteArrayDecoder {
@@ -31,7 +31,7 @@ public struct Base32Decoder: ByteArrayDecoder {
             } else if isNotPadding(byte: byte) {
                 throw Base32DecoderError.invalidByte(byte: byte,
                                                       index: index,
-                                                      processedOutput: Data(output))
+                                                      processedOutput: output)
             }
 
             let isFullBlock = currentBlock.count == 8

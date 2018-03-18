@@ -13,68 +13,28 @@ class Base32EncoderTests: XCTestCase {
         sut = Base32Encoder.encoder()
     }
     
-    func test_encode_zeroBytes() {
-        assertEncoder(sut, passes: .test_0Byte)
-    }
-    
-    func test_encode_1Byte() {
-        assertEncoder(sut, passes: .test_1Byte)
-    }
-    
-    func test_encode_2Bytes() {
-        assertEncoder(sut, passes: .test_2Byte)
-    }
-    
-    func test_encode_3Bytes() {
-        assertEncoder(sut, passes: .test_3Byte)
-    }
-    
-    func test_encode_4Bytes() {
-        assertEncoder(sut, passes: .test_4Byte)
-    }
-    
-    func test_encode_5Bytes() {
-        assertEncoder(sut, passes: .test_5Byte)
-    }
-    
-    func test_encode_6Byte() {
-        assertEncoder(sut, passes: .test_6Byte)
-    }
-    
-    func test_encode_10Bytes() {
-        assertEncoder(sut, passes: .test_10Byte)
-    }
-    
-    func test_encode_15Bytes() {
-        assertEncoder(sut, passes: .test_15Byte)
-    }
-    
-    func test_encode_RFC4648TestVector1() {
-        assertEncoder(sut, passes: .test_RFC4648_Test_Vector_1)
-    }
-    
-    func test_encode_RFC4648TestVector2() {
-        assertEncoder(sut, passes: .test_RFC4648_Test_Vector_2)
+    func test_testVectors() {
+        let vectors = TestVectors.base32
+        for vector in vectors {
+            let bytes = vector.decoded.utf8Bytes
+            let encoded = try! sut.encode(bytes: [Byte](bytes))
+            let string = Data(encoded).asciiString
+            XCTAssertEqual(string, vector.encoded)
+        }
     }
     
     
-    func test_encode_RFC4648TestVector3() {
-        assertEncoder(sut, passes: .test_RFC4648_Test_Vector_3)
+}
+
+private extension String {
+    var utf8Bytes: [Byte] {
+        return [Byte](self.data(using: .utf8)!)
     }
-    
-    
-    func test_encode_RFC4648TestVector4() {
-        assertEncoder(sut, passes: .test_RFC4648_Test_Vector_4)
+}
+
+private extension Data {
+    var asciiString: String {
+        return String(data: self, encoding: .ascii)!
     }
-    
-    func test_encode_shortPhrase() {
-        assertEncoder(sut, passes: .test_short_phrase)
-    }
-    
-    func test_encode_LongerPhrase() {
-        assertEncoder(sut, passes: .test_longer_phrase)
-    }
-    
-    
 }
 

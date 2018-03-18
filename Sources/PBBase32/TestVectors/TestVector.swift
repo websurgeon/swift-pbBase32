@@ -4,8 +4,11 @@
 
 import Foundation
 
-struct TestVector {
+struct TestVector: Decodable {
+    let name: String
     let decoded: String
     let encoded: String
 }
+
+
 
