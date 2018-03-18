@@ -39,6 +39,10 @@
 		D083AB6E205E86430065AF93 /* TestVectors+loadTestVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083AB6C205E86430065AF93 /* TestVectors+loadTestVectors.swift */; };
 		D083AB70205E87910065AF93 /* TestVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083AB6F205E87910065AF93 /* TestVectors.swift */; };
 		D083AB71205E87910065AF93 /* TestVectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083AB6F205E87910065AF93 /* TestVectors.swift */; };
+		D0880280205E92F700FB1C10 /* Alphabet+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088027F205E92F700FB1C10 /* Alphabet+EquatableTests.swift */; };
+		D0880281205E92F700FB1C10 /* Alphabet+EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088027F205E92F700FB1C10 /* Alphabet+EquatableTests.swift */; };
+		D0880282205E93FF00FB1C10 /* Alphabet+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088027C205E928900FB1C10 /* Alphabet+Equatable.swift */; };
+		D0880283205E940100FB1C10 /* Alphabet+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088027C205E928900FB1C10 /* Alphabet+Equatable.swift */; };
 		D0AE7F7C205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */; };
 		D0AE7F7D205C7A8B00B1FB0F /* Base32Encoder+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */; };
 		D0AE7F7F205C7BB300B1FB0F /* Base32Encoder+encodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+encodeBlock.swift */; };
@@ -116,6 +120,8 @@
 		D083AB66205E84ED0065AF93 /* Base32Decoder+base32hexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Decoder+base32hexTests.swift"; sourceTree = "<group>"; };
 		D083AB6C205E86430065AF93 /* TestVectors+loadTestVectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestVectors+loadTestVectors.swift"; sourceTree = "<group>"; };
 		D083AB6F205E87910065AF93 /* TestVectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVectors.swift; sourceTree = "<group>"; };
+		D088027C205E928900FB1C10 /* Alphabet+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alphabet+Equatable.swift"; sourceTree = "<group>"; };
+		D088027F205E92F700FB1C10 /* Alphabet+EquatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alphabet+EquatableTests.swift"; sourceTree = "<group>"; };
 		D0AE7F7B205C7A8B00B1FB0F /* Base32Encoder+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+Padding.swift"; sourceTree = "<group>"; };
 		D0AE7F7E205C7BB300B1FB0F /* Base32Encoder+encodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+encodeBlock.swift"; sourceTree = "<group>"; };
 		D0AE7F81205C7CD600B1FB0F /* Base32Encoder+DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+DataEncoder.swift"; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				D028B115205C610C00253ADB /* Alphabet.swift */,
+				D088027C205E928900FB1C10 /* Alphabet+Equatable.swift */,
+				D088027F205E92F700FB1C10 /* Alphabet+EquatableTests.swift */,
 				D0AE7F93205D190E00B1FB0F /* AlphabetTests.swift */,
 				D083AB57205E80EE0065AF93 /* Alphabet+base32.swift */,
 				D083AB5A205E813C0065AF93 /* Alphabet+base32hex.swift */,
@@ -515,6 +523,7 @@
 				D083AB71205E87910065AF93 /* TestVectors.swift in Sources */,
 				D083AB5F205E823A0065AF93 /* Base32Encoder+base32hexTests.swift in Sources */,
 				D0522794205C5EAA00419A02 /* Base32EncoderTests.swift in Sources */,
+				D0880281205E92F700FB1C10 /* Alphabet+EquatableTests.swift in Sources */,
 				D083AB68205E84ED0065AF93 /* Base32Decoder+base32hexTests.swift in Sources */,
 				D0522742205B034E00419A02 /* PBBase32Tests.swift in Sources */,
 			);
@@ -531,6 +540,7 @@
 				D083AB70205E87910065AF93 /* TestVectors.swift in Sources */,
 				D083AB5E205E823A0065AF93 /* Base32Encoder+base32hexTests.swift in Sources */,
 				D0522795205C5EAB00419A02 /* Base32EncoderTests.swift in Sources */,
+				D0880280205E92F700FB1C10 /* Alphabet+EquatableTests.swift in Sources */,
 				D083AB67205E84ED0065AF93 /* Base32Decoder+base32hexTests.swift in Sources */,
 				D0522752205B295500419A02 /* PBBase32Tests.swift in Sources */,
 			);
@@ -553,6 +563,7 @@
 				D028B116205C610D00253ADB /* Alphabet.swift in Sources */,
 				D0AE7F88205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */,
 				D083AB64205E84320065AF93 /* Base32Decoder+base32hex.swift in Sources */,
+				D0880282205E93FF00FB1C10 /* Alphabet+Equatable.swift in Sources */,
 				D052278E205C5DF700419A02 /* ByteArrayEncoder.swift in Sources */,
 				D0AE7F8B205C7F2E00B1FB0F /* StringEncoder.swift in Sources */,
 				D0AE7FCB205DB82C00B1FB0F /* Base32Decoder+decodeBlock.swift in Sources */,
@@ -580,6 +591,7 @@
 				D083AB5C205E813C0065AF93 /* Alphabet+base32hex.swift in Sources */,
 				D0AE7F89205C7E6C00B1FB0F /* Base32Encoder+StringEncoder.swift in Sources */,
 				D0AE7FC1205DAC2D00B1FB0F /* StringDecoder.swift in Sources */,
+				D0880283205E940100FB1C10 /* Alphabet+Equatable.swift in Sources */,
 				D083AB65205E84320065AF93 /* Base32Decoder+base32hex.swift in Sources */,
 				D0AE7FBF205DAC2300B1FB0F /* ByteArrayDecoder.swift in Sources */,
 				D0522796205C5EAE00419A02 /* Base32Encoder.swift in Sources */,
