@@ -15,10 +15,5 @@ class Base32EncoderTests: XCTestCase {
         XCTAssertEqual(sut.alphabet, alphabet)
     }
     
-    func test_base32Encoder_shouldUseBase32Alphabet() {
-        let sut = Base32Encoder.base32Encoder()
-        
-        XCTAssertEqual(sut.alphabet, Alphabet.base32())
-    }
 }
 

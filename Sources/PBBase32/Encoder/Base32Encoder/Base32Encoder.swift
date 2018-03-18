@@ -11,9 +11,5 @@ public struct Base32Encoder {
         self.alphabet = alphabet
     }
     
-    public static func base32Encoder() -> Base32Encoder {
-        return Base32Encoder(alphabet: Alphabet.base32())
-    }
-    
 }
 

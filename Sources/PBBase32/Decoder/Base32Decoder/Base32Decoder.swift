@@ -10,10 +10,6 @@ public struct Base32Decoder {
     init(alphabet: Alphabet) {
         self.alphabet = alphabet
     }
-    
-    public static func base32Decoder() -> Base32Decoder {
-        return Base32Decoder(alphabet: Alphabet.base32())
-    }
 
 }
 
