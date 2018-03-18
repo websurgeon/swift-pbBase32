@@ -7,7 +7,11 @@ import Foundation
 public struct Base32Encoder: ByteArrayEncoder {
     private let alphabet: Alphabet
 
-    public static func encoder() -> Base32Encoder {
+    internal init(alphabet: Alphabet) {
+        self.alphabet = alphabet
+    }
+    
+    public static func base32Encoder() -> Base32Encoder {
         return Base32Encoder(alphabet: Alphabet.base32())
     }
 

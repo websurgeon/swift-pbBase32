@@ -12,7 +12,7 @@ public enum Base32DecoderError: Error {
 public struct Base32Decoder: ByteArrayDecoder {
     let alphabet: Alphabet
     
-    public static func decoder() -> Base32Decoder {
+    public static func base32Decoder() -> Base32Decoder {
         return Base32Decoder(alphabet: Alphabet.base32())
     }
     

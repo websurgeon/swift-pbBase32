@@ -5,16 +5,16 @@
 import XCTest
 @testable import PBBase32
 
-class Base32EncoderTests: XCTestCase {
+class Base32Encoder_base32hexTests: XCTestCase {
     var sut: ByteArrayEncoder!
     
     override func setUp() {
         super.setUp()
-        sut = Base32Encoder.base32Encoder()
+        sut = Base32Encoder.base32hexEncoder()
     }
     
     func test_testVectors() {
-        let vectors = TestVectors.base32
+        let vectors = TestVectors.base32hex
         for vector in vectors {
             let bytes = vector.decoded.utf8Bytes
             let encoded = try! sut.encode(bytes: [Byte](bytes))
@@ -37,4 +37,6 @@ private extension Data {
         return String(data: self, encoding: .ascii)!
     }
 }
+
+
 

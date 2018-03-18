@@ -10,7 +10,7 @@ class Base32DecoderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        sut = Base32Decoder.decoder()
+        sut = Base32Decoder.base32Decoder()
     }
     
     func test_testVectors() {

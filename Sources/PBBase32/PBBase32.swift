@@ -7,17 +7,17 @@ import Foundation
 public typealias Byte = UInt8
 
 public func base32Encode(data: Data) throws -> Data {
-    return try Base32Encoder.encoder().encode(data: data)
+    return try Base32Encoder.base32Encoder().encode(data: data)
 }
 
 public func base32Encode(string: String) throws -> String {
-    return try Base32Encoder.encoder().encode(string: string)
+    return try Base32Encoder.base32Encoder().encode(string: string)
 }
 
 public func base32Decode(data: Data) throws -> Data {
-    return try Base32Decoder.decoder().decode(data: data)
+    return try Base32Decoder.base32Decoder().decode(data: data)
 }
 
 public func base32Decode(string: String) throws -> String {
-    return try Base32Decoder.decoder().decode(string: string)
+    return try Base32Decoder.base32Decoder().decode(string: string)
 }
