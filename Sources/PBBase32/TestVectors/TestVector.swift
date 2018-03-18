@@ -9,6 +9,3 @@ struct TestVector: Decodable {
     let decoded: String
     let encoded: String
 }
-
-
-

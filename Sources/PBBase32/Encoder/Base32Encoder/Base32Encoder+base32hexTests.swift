@@ -14,7 +14,7 @@ class Base32Encoder_base32hexTests: XCTestCase {
     }
     
     func test_testVectors() {
-        let vectors = TestVectors.base32hex
+        let vectors = TestVectors.loadTestVectors(type: .base32hex)
         for vector in vectors {
             let bytes = vector.decoded.utf8Bytes
             let encoded = try! sut.encode(bytes: [Byte](bytes))
