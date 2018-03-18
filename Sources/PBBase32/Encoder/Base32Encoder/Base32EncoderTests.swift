@@ -16,25 +16,10 @@ class Base32EncoderTests: XCTestCase {
     func test_testVectors() {
         let vectors = TestVectors.loadTestVectors(type: .base32)
         for vector in vectors {
-            let bytes = vector.decoded.utf8Bytes
-            let encoded = try! sut.encode(bytes: [Byte](bytes))
-            let string = Data(encoded).asciiString
-            XCTAssertEqual(string, vector.encoded)
+            let encoded = try! sut.encode(bytes: vector.decoded)
+            XCTAssertEqual(encoded, vector.encoded)
         }
     }
     
     
 }
-
-private extension String {
-    var utf8Bytes: [Byte] {
-        return [Byte](self.data(using: .utf8)!)
-    }
-}
-
-private extension Data {
-    var asciiString: String {
-        return String(data: self, encoding: .ascii)!
-    }
-}
-

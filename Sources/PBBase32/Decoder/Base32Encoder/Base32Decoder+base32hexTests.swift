@@ -16,28 +16,9 @@ class Base32Decoder_base32hexTests: XCTestCase {
     func test_testVectors() {
         let vectors = TestVectors.loadTestVectors(type: .base32hex)
         for vector in vectors {
-            let bytes = vector.encoded.asciiBytes
-            let decoded = try! sut.decode(bytes: [Byte](bytes))
-            let string = Data(decoded).utf8String
-            XCTAssertEqual(string, vector.decoded)
+            let decoded = try! sut.decode(bytes: vector.encoded)
+            XCTAssertEqual(decoded, vector.decoded)
         }
     }
     
 }
-
-private extension String {
-    var utf8Bytes: [Byte] {
-        return [Byte](self.data(using: .utf8)!)
-    }
-    var asciiBytes: [Byte] {
-        return [Byte](self.data(using: .ascii)!)
-    }
-}
-
-private extension Data {
-    var utf8String: String {
-        return String(data: self, encoding: .utf8)!
-    }
-}
-
-

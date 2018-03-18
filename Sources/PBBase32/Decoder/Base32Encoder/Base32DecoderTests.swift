@@ -16,10 +16,9 @@ class Base32DecoderTests: XCTestCase {
     func test_testVectors() {
         let vectors = TestVectors.loadTestVectors(type: .base32)
         for vector in vectors {
-            let bytes = vector.encoded.asciiBytes
+            let bytes = vector.encoded
             let decoded = try! sut.decode(bytes: [Byte](bytes))
-            let string = Data(decoded).utf8String
-            XCTAssertEqual(string, vector.decoded)
+            XCTAssertEqual(decoded, vector.decoded)
         }
     }
 
