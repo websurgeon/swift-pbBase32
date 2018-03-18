@@ -6,20 +6,19 @@ import XCTest
 @testable import PBBase32
 
 class Base32EncoderTests: XCTestCase {
-    var sut: ByteArrayEncoder!
     
-    override func setUp() {
-        super.setUp()
-        sut = Base32Encoder.base32Encoder()
+    func test_alphabet() {
+        let alphabet = Alphabet(["foo", "bar"], padding: "baz")
+        
+        let sut = Base32Encoder(alphabet: alphabet)
+        
+        XCTAssertEqual(sut.alphabet, alphabet)
     }
     
-    func test_testVectors() {
-        let vectors = TestVectors.loadTestVectors(type: .base32)
-        for vector in vectors {
-            let encoded = try! sut.encode(bytes: vector.decoded)
-            XCTAssertEqual(encoded, vector.encoded)
-        }
+    func test_base32Encoder_shouldUseBase32Alphabet() {
+        let sut = Base32Encoder.base32Encoder()
+        
+        XCTAssertEqual(sut.alphabet, Alphabet.base32())
     }
-    
-    
 }
+
