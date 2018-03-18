@@ -7,7 +7,7 @@ import Foundation
 public struct Base32Encoder {
     let alphabet: Alphabet
 
-    internal init(alphabet: Alphabet) {
+    init(alphabet: Alphabet) {
         self.alphabet = alphabet
     }
     
