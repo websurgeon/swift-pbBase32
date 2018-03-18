@@ -274,7 +274,7 @@
 		D0AE7F9F205D94C800B1FB0F /* Decoder */ = {
 			isa = PBXGroup;
 			children = (
-				D0AE7FB5205DAAFD00B1FB0F /* Base32Encoder */,
+				D0AE7FB5205DAAFD00B1FB0F /* Base32Decoder */,
 				D0AE7FA2205D952200B1FB0F /* ByteArrayDecoder.swift */,
 				D0AE7FA0205D952200B1FB0F /* DataDecoder.swift */,
 				D0AE7FA1205D952200B1FB0F /* StringDecoder.swift */,
@@ -294,7 +294,7 @@
 			path = TestVectors;
 			sourceTree = "<group>";
 		};
-		D0AE7FB5205DAAFD00B1FB0F /* Base32Encoder */ = {
+		D0AE7FB5205DAAFD00B1FB0F /* Base32Decoder */ = {
 			isa = PBXGroup;
 			children = (
 				D0AE7FBC205DAB9A00B1FB0F /* Base32Decoder.swift */,
@@ -307,7 +307,7 @@
 				D0AE7FD2205DC86600B1FB0F /* Base32Decoder+StringEncoder.swift */,
 				D083AB66205E84ED0065AF93 /* Base32Decoder+base32hexTests.swift */,
 			);
-			path = Base32Encoder;
+			path = Base32Decoder;
 			sourceTree = "<group>";
 		};
 		D0AEECDC205A67B0001D8EF6 = {
