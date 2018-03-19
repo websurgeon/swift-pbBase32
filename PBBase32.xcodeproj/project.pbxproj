@@ -164,8 +164,6 @@
 		D0AEED05205A6C18001D8EF6 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D0AEED06205A6C18001D8EF6 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D0AEED0A205A70EC001D8EF6 /* PBBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBase32.h; sourceTree = "<group>"; };
-		D0AEED0F205A7AF9001D8EF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D0AEED19205A7F8A001D8EF6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		D0AEED1C205AF850001D8EF6 /* base32-process-notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "base32-process-notes.md"; sourceTree = "<group>"; };
 		D0AEED1D205AF850001D8EF6 /* base32-rfc4648.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "base32-rfc4648.txt"; sourceTree = "<group>"; };
 		D0EC7510205E9BEF008ED0E3 /* Base32Encoder+base32Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+base32Encoder.swift"; sourceTree = "<group>"; };
@@ -326,8 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				D0AEED1B205AF850001D8EF6 /* docs */,
-				D0AEED0F205A7AF9001D8EF6 /* README.md */,
-				D0AEED19205A7F8A001D8EF6 /* LICENSE.txt */,
 				D0AEED04205A6B87001D8EF6 /* Sources */,
 				D0AEECE9205A6906001D8EF6 /* Products */,
 			);
