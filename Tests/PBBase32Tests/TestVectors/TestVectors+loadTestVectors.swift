@@ -5,12 +5,16 @@ import Foundation
 
 extension TestVectors {
     static func loadTestVectors(type: EncodingType) -> [ TestVector ] {
-        let bundle = Bundle(for: self)
-        let pathURL = bundle.url(forResource: type.fileName, withExtension: "json")!
-        let jsonData = try! Data(contentsOf: pathURL, options: .mappedIfSafe)
+        let jsonObject: Any
+        switch type {
+        case .base32:
+            jsonObject = TestVectors.base32JSONObject
+        case .base32hex:
+            jsonObject = TestVectors.base32hexJSONObject
+        }
+        let jsonData = try! JSONSerialization.data(withJSONObject: jsonObject, options: [])
         let decoder = JSONDecoder()
         return try! decoder.decode([TestVector].self, from: jsonData)
     }
 }
-
 
