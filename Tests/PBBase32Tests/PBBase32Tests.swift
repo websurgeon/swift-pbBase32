@@ -42,3 +42,16 @@ class PBBase32Tests: XCTestCase {
         XCTAssertEqual(decoded, "This is the house that jack build")
     }
 }
+
+extension PBBase32Tests {
+    static var allTests : [(String, (PBBase32Tests) -> () throws -> Void)] {
+        return [
+            ("test_base32Encode_data", test_base32Encode_data),
+            ("test_base32Encode_string", test_base32Encode_string),
+            ("test_base32Decode_data", test_base32Decode_data),
+            ("test_base32Decode_string", test_base32Decode_string),
+        ]
+        
+    }
+}
+

@@ -43,3 +43,4 @@ private extension String {
         return [Byte](self.data(using: .ascii)!)
     }
 }
+
