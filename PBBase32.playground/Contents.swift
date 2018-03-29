@@ -1,5 +1,10 @@
-//: Playground - noun: a place where people can play
+import PBBase32
 
-import Foundation
+let encoded = try! base32Encode(string: "testing")
 
-var str = "Hello, playground"
+let decoded = try! base32Decode(string: "ORSXG5DJNZTQ====")
+
+let hexEncoded = try! base32hexEncode(string: "testing")
+
+let hexDecoded = try! base32hexDecode(string: "EHIN6T39DPJG====")
+
