@@ -7,7 +7,7 @@ import Foundation
 extension Base32Encoder: StringEncoder {
     
     public func encode(string: String) throws -> String {
-        let data = string.data(using: .utf8)!
+        let data = Data(string.utf8)
         let encoded = try encode(bytes: [Byte](data))
         return String(data: Data(encoded), encoding: .ascii)!
     }

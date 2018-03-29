@@ -4,18 +4,13 @@
 
 import Foundation
 
-public enum Base32DecoderError: Error {
-    case invalidInput(size: Int)
-    case invalidByte(byte: Byte, index: Int, processedOutput: [Byte])
-}
-
 extension Base32Decoder: ByteArrayDecoder {
 
     func decode(bytes input: [Byte]) throws -> [Byte] {
         
         let inputSize = input.count
         guard validInputSize(inputSize) else {
-            throw Base32DecoderError.invalidInput(size: inputSize)
+            throw Base32DecoderError.invalidInputSize(size: inputSize)
         }
         
         var output = [Byte]()

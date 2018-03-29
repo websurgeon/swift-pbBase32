@@ -8,7 +8,7 @@ import PBBase32
 class PBBase32Tests: XCTestCase {
     
     func test_base32Encode_data() {
-        let data = "This is the house that jack build".data(using: .utf8)!
+        let data = Data("This is the house that jack build".utf8)
 
         let encoded = try! base32Encode(data: data)
         
@@ -26,7 +26,7 @@ class PBBase32Tests: XCTestCase {
     }
     
     func test_base32Decode_data() {
-        let data = "KRUGS4ZANFZSA5DIMUQGQ33VONSSA5DIMF2CA2TBMNVSAYTVNFWGI===".data(using: .utf8)!
+        let data = Data("KRUGS4ZANFZSA5DIMUQGQ33VONSSA5DIMF2CA2TBMNVSAYTVNFWGI===".utf8)
         
         let decoded = try! base32Decode(data: data)
         

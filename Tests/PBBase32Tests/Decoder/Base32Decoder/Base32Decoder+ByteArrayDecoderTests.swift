@@ -25,7 +25,7 @@ class Base32Decoder_ByteArrayDecoderTests: XCTestCase {
     func test_decode_invalidInputSize() {
         let inputData = "A".asciiBytes
         XCTAssertThrowsError(try sut.decode(bytes: [Byte](inputData))) { error in
-            guard case Base32DecoderError.invalidInput(let size) = error else {
+            guard case Base32DecoderError.invalidInputSize(let size) = error else {
                 return XCTFail("expected error")
             }
             XCTAssertEqual(size, 1)
@@ -50,16 +50,9 @@ class Base32Decoder_ByteArrayDecoderTests: XCTestCase {
 
 private extension String {
     var utf8Bytes: [Byte] {
-        return [Byte](self.data(using: .utf8)!)
+        return [Byte](Data(self.utf8))
     }
     var asciiBytes: [Byte] {
         return [Byte](self.data(using: .ascii)!)
     }
 }
-
-private extension Data {
-    var utf8String: String {
-        return String(data: self, encoding: .utf8)!
-    }
-}
-

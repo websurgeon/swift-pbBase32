@@ -25,10 +25,7 @@ struct TestVector: Decodable {
         name = try values.decode(String.self, forKey: .name)
         
         let decodedString = try values.decode(String.self, forKey: .decoded)
-        guard let decodedBytes = decodedString.data(using: .utf8) else {
-            throw TestVectorDecodingError.byteConversionError(prop: CodingKeys.decoded)
-        }
-        decoded = [Byte](decodedBytes)
+        decoded = [Byte](Data(decodedString.utf8))
 
         let encodedString = try values.decode(String.self, forKey: .encoded)
         guard let encodedBytes = encodedString.data(using: .ascii) else {
@@ -41,10 +38,10 @@ struct TestVector: Decodable {
 
 private extension String {
     var utf8Bytes: [Byte] {
-        return [Byte](self.data(using: .utf8)!)
+        return [Byte](Data(self.utf8))
     }
     
     var asciiBytes: [Byte] {
-        return [Byte](self.data(using: .utf8)!)
+        return [Byte](self.data(using: .ascii)!)
     }
 }
