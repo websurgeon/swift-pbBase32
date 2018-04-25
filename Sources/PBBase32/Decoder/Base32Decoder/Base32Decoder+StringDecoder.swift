@@ -9,7 +9,7 @@ extension Base32Decoder: StringDecoder {
     public func decode(string: String) throws -> String {
         let data = try dataDecodedFromAscii(string: string)
         let decodedBytes = try decode(bytes: [Byte](data))
-        return try stringFromDecodedBytes(decodedBytes)
+        return stringFromDecodedBytes(decodedBytes)
     }
     
     private func dataDecodedFromAscii(string: String) throws -> Data {
@@ -19,11 +19,9 @@ extension Base32Decoder: StringDecoder {
         return data
     }
     
-    private func stringFromDecodedBytes(_ bytes: [Byte]) throws -> String {
-        guard let string = String(data: Data(bytes), encoding: .utf8) else {
-            throw Base32DecoderError.invalidOutput(bytes: bytes)
-        }
-        return string
+    private func stringFromDecodedBytes(_ bytes: [Byte]) -> String {
+        // assuming data to utf8 string conversion cannot fail!
+        return String(data: Data(bytes), encoding: .utf8)!
     }
 }
 
