@@ -25,4 +25,11 @@ class Base32Encoder_base32EncoderTests: XCTestCase {
         }
     }
     
+    func test_invalidBlockSize_shouldBeFatalError() {
+        assertFatalError(expectedMessage: "block size must be <= 5 bytes") {
+            let input = [Byte]("012345".data(using: .utf8)!)
+            _ = self.sut.encodeBlock(input, alphabet: self.sut.alphabet)
+        }
+    }
 }
+
