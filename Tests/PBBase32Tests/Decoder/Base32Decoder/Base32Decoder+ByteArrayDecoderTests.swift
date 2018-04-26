@@ -47,12 +47,3 @@ class Base32Decoder_ByteArrayDecoderTests: XCTestCase {
     }
     
 }
-
-private extension String {
-    var utf8Bytes: [Byte] {
-        return [Byte](Data(self.utf8))
-    }
-    var asciiBytes: [Byte] {
-        return [Byte](self.data(using: .ascii)!)
-    }
-}

@@ -4,8 +4,6 @@
 
 import Foundation
 
-public typealias Byte = UInt8
-
 public func base32Encode(data: Data) throws -> Data {
     return try Base32Encoder.base32Encoder().encode(data: data)
 }

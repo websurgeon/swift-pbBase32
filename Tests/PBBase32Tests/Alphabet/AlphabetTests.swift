@@ -3,7 +3,7 @@
 //
 
 import XCTest
-import PBBase32
+@testable import PBBase32
 
 class AlphabetTests: XCTestCase {
     let values = ["a", "b", "c"]
@@ -45,7 +45,7 @@ private extension Int {
 
 private extension String {
     var bytes: [Byte] {
-        return [Byte](self.data(using: .ascii)!)
+        return self.asciiBytes
     }
 }
 
