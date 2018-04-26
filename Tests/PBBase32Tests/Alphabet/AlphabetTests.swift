@@ -7,6 +7,7 @@ import PBBase32
 
 class AlphabetTests: XCTestCase {
     let values = ["a", "b", "c"]
+    let nonAlphabetChar = "d"
     let padding = "x"
     var sut: Alphabet!
     
@@ -28,6 +29,10 @@ class AlphabetTests: XCTestCase {
         for (index, _) in values.enumerated() {
             XCTAssertEqual(sut.map(index.byte), values[index].bytes)
         }
+    }
+    
+    func test_indexOfByte_whenNotAvailable_shouldReturnNil() {
+        XCTAssertNil(sut.index(of: nonAlphabetChar.bytes[0]))
     }
 
 }
