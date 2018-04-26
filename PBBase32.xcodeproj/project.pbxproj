@@ -337,31 +337,15 @@
 		D0EC75312068DF58008ED0E3 /* Base32Decoder */ = {
 			isa = PBXGroup;
 			children = (
-				D0EC75322068DF58008ED0E3 /* Base32 */,
-				D0EC75392068DF58008ED0E3 /* Base32hex */,
 				D0EC75382068DF58008ED0E3 /* Base32Decoder.swift */,
 				D0EC75362068DF58008ED0E3 /* Base32Decoder+decodeBlock.swift */,
 				D0EC75342068DF58008ED0E3 /* Base32Decoder+ByteArrayDecoder.swift */,
 				D0EC75352068DF58008ED0E3 /* Base32Decoder+DataDecoder.swift */,
 				D0EC75372068DF58008ED0E3 /* Base32Decoder+StringDecoder.swift */,
-			);
-			path = Base32Decoder;
-			sourceTree = "<group>";
-		};
-		D0EC75322068DF58008ED0E3 /* Base32 */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC75332068DF58008ED0E3 /* Base32Decoder+base32Decoder.swift */,
-			);
-			path = Base32;
-			sourceTree = "<group>";
-		};
-		D0EC75392068DF58008ED0E3 /* Base32hex */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC753A2068DF58008ED0E3 /* Base32Decoder+base32hexDecoder.swift */,
 			);
-			path = Base32hex;
+			path = Base32Decoder;
 			sourceTree = "<group>";
 		};
 		D0EC753E2068DF58008ED0E3 /* Encoder */ = {
@@ -378,32 +362,16 @@
 		D0EC753F2068DF58008ED0E3 /* Base32Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				D0EC75402068DF58008ED0E3 /* Base32 */,
-				D0EC75422068DF58008ED0E3 /* Base32Encoder+ByteArrayEncoder.swift */,
-				D0EC75432068DF58008ED0E3 /* Base32Encoder+DataEncoder.swift */,
+				D0EC75472068DF58008ED0E3 /* Base32Encoder.swift */,
 				D0EC75442068DF58008ED0E3 /* Base32Encoder+encodeBlock.swift */,
 				D0EC75452068DF58008ED0E3 /* Base32Encoder+Padding.swift */,
+				D0EC75422068DF58008ED0E3 /* Base32Encoder+ByteArrayEncoder.swift */,
+				D0EC75432068DF58008ED0E3 /* Base32Encoder+DataEncoder.swift */,
 				D0EC75462068DF58008ED0E3 /* Base32Encoder+StringEncoder.swift */,
-				D0EC75472068DF58008ED0E3 /* Base32Encoder.swift */,
-				D0EC75482068DF58008ED0E3 /* Base32Hex */,
-			);
-			path = Base32Encoder;
-			sourceTree = "<group>";
-		};
-		D0EC75402068DF58008ED0E3 /* Base32 */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC75412068DF58008ED0E3 /* Base32Encoder+base32Encoder.swift */,
-			);
-			path = Base32;
-			sourceTree = "<group>";
-		};
-		D0EC75482068DF58008ED0E3 /* Base32Hex */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC75492068DF58008ED0E3 /* Base32Encoder+base32hexEncoder.swift */,
 			);
-			path = Base32Hex;
+			path = Base32Encoder;
 			sourceTree = "<group>";
 		};
 		D0EC754D2068DF58008ED0E3 /* iOS */ = {
@@ -465,29 +433,13 @@
 		D0EC75952068DF67008ED0E3 /* Base32Decoder */ = {
 			isa = PBXGroup;
 			children = (
-				D0EC75962068DF67008ED0E3 /* Base32 */,
-				D0EC759A2068DF67008ED0E3 /* Base32hex */,
-				D0EC75982068DF67008ED0E3 /* Base32Decoder+ByteArrayDecoderTests.swift */,
 				D0EC75992068DF67008ED0E3 /* Base32DecoderTests.swift */,
+				D0EC75982068DF67008ED0E3 /* Base32Decoder+ByteArrayDecoderTests.swift */,
 				D0A4F968206C1F7D007A5BC7 /* Base32Decoder+StringDecoderTests.swift */,
-			);
-			path = Base32Decoder;
-			sourceTree = "<group>";
-		};
-		D0EC75962068DF67008ED0E3 /* Base32 */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC75972068DF67008ED0E3 /* Base32Decoder+base32DecoderTests.swift */,
-			);
-			path = Base32;
-			sourceTree = "<group>";
-		};
-		D0EC759A2068DF67008ED0E3 /* Base32hex */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC759B2068DF67008ED0E3 /* Base32Decoder+base32hexDecoderTests.swift */,
 			);
-			path = Base32hex;
+			path = Base32Decoder;
 			sourceTree = "<group>";
 		};
 		D0EC759C2068DF67008ED0E3 /* Encoder */ = {
@@ -501,28 +453,12 @@
 		D0EC759D2068DF67008ED0E3 /* Base32Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				D0EC759E2068DF67008ED0E3 /* Base32 */,
-				D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */,
 				D0EC75A12068DF67008ED0E3 /* Base32EncoderTests.swift */,
-				D0EC75A22068DF67008ED0E3 /* Base32Hex */,
-			);
-			path = Base32Encoder;
-			sourceTree = "<group>";
-		};
-		D0EC759E2068DF67008ED0E3 /* Base32 */ = {
-			isa = PBXGroup;
-			children = (
+				D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */,
 				D0EC759F2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift */,
-			);
-			path = Base32;
-			sourceTree = "<group>";
-		};
-		D0EC75A22068DF67008ED0E3 /* Base32Hex */ = {
-			isa = PBXGroup;
-			children = (
 				D0EC75A32068DF67008ED0E3 /* Base32Encoder+base32hexEncoderTests.swift */,
 			);
-			path = Base32Hex;
+			path = Base32Encoder;
 			sourceTree = "<group>";
 		};
 		D0EC75A42068DF67008ED0E3 /* iOS */ = {
