@@ -91,8 +91,6 @@
 		D0EC75BA2068DF67008ED0E3 /* Base32Decoder+base32hexDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC759B2068DF67008ED0E3 /* Base32Decoder+base32hexDecoderTests.swift */; };
 		D0EC75BB2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC759F2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift */; };
 		D0EC75BC2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC759F2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift */; };
-		D0EC75BD2068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */; };
-		D0EC75BE2068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */; };
 		D0EC75BF2068DF67008ED0E3 /* Base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC75A12068DF67008ED0E3 /* Base32EncoderTests.swift */; };
 		D0EC75C02068DF67008ED0E3 /* Base32EncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC75A12068DF67008ED0E3 /* Base32EncoderTests.swift */; };
 		D0EC75C12068DF67008ED0E3 /* Base32Encoder+base32hexEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC75A32068DF67008ED0E3 /* Base32Encoder+base32hexEncoderTests.swift */; };
@@ -177,7 +175,6 @@
 		D0EC75992068DF67008ED0E3 /* Base32DecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32DecoderTests.swift; sourceTree = "<group>"; };
 		D0EC759B2068DF67008ED0E3 /* Base32Decoder+base32hexDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32Decoder+base32hexDecoderTests.swift"; sourceTree = "<group>"; };
 		D0EC759F2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+base32EncoderTests.swift"; sourceTree = "<group>"; };
-		D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+ByteArrayEncoderTests.swift"; sourceTree = "<group>"; };
 		D0EC75A12068DF67008ED0E3 /* Base32EncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32EncoderTests.swift; sourceTree = "<group>"; };
 		D0EC75A32068DF67008ED0E3 /* Base32Encoder+base32hexEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Base32Encoder+base32hexEncoderTests.swift"; sourceTree = "<group>"; };
 		D0EC75A52068DF67008ED0E3 /* Info-iOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS-Tests.plist"; sourceTree = "<group>"; };
@@ -454,7 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				D0EC75A12068DF67008ED0E3 /* Base32EncoderTests.swift */,
-				D0EC75A02068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift */,
 				D0EC759F2068DF67008ED0E3 /* Base32Encoder+base32EncoderTests.swift */,
 				D0EC75A32068DF67008ED0E3 /* Base32Encoder+base32hexEncoderTests.swift */,
 			);
@@ -682,7 +678,6 @@
 				D08E6263208FC068004C87F1 /* XCTestCase+assertFatalError.swift in Sources */,
 				D0EC75B82068DF67008ED0E3 /* Base32DecoderTests.swift in Sources */,
 				D0EC75B62068DF67008ED0E3 /* Base32Decoder+ByteArrayDecoderTests.swift in Sources */,
-				D0EC75BE2068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift in Sources */,
 				D0EC75B22068DF67008ED0E3 /* AlphabetTests.swift in Sources */,
 				D0EC75CE2068DF67008ED0E3 /* TestVectors.swift in Sources */,
 				D0EC75B02068DF67008ED0E3 /* Alphabet+EquatableTests.swift in Sources */,
@@ -707,7 +702,6 @@
 				D08E6262208FC068004C87F1 /* XCTestCase+assertFatalError.swift in Sources */,
 				D0EC75B72068DF67008ED0E3 /* Base32DecoderTests.swift in Sources */,
 				D0EC75B52068DF67008ED0E3 /* Base32Decoder+ByteArrayDecoderTests.swift in Sources */,
-				D0EC75BD2068DF67008ED0E3 /* Base32Encoder+ByteArrayEncoderTests.swift in Sources */,
 				D0EC75B12068DF67008ED0E3 /* AlphabetTests.swift in Sources */,
 				D0EC75CD2068DF67008ED0E3 /* TestVectors.swift in Sources */,
 				D0EC75AF2068DF67008ED0E3 /* Alphabet+EquatableTests.swift in Sources */,

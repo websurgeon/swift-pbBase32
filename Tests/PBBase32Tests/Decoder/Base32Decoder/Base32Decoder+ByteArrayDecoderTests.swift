@@ -13,15 +13,6 @@ class Base32Decoder_ByteArrayDecoderTests: XCTestCase {
         sut = Base32Decoder.base32Decoder()
     }
     
-    func test_testVectors() {
-        let vectors = TestVectors.loadTestVectors(type: .base32)
-        for vector in vectors {
-            let bytes = vector.encoded
-            let decoded = try! sut.decode(bytes: [Byte](bytes))
-            XCTAssertEqual(decoded, vector.decoded)
-        }
-    }
-
     func test_decode_invalidInputSize() {
         let inputData = "A".asciiBytes
         XCTAssertThrowsError(try sut.decode(bytes: [Byte](inputData))) { error in

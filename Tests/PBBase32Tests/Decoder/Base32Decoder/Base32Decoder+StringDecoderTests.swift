@@ -13,18 +13,6 @@ class Base32Decoder_StringDecoderTests: XCTestCase {
         sut = Base32Decoder.base32Decoder()
     }
     
-    func test_testVectors() {
-        let vectors = TestVectors.loadTestVectors(type: .base32)
-        for vector in vectors {
-            let input = Data(vector.encoded).utf8String
-            let expected = Data(vector.decoded).utf8String
-
-            let decoded = try! sut.decode(string: input)
-            
-            XCTAssertEqual(decoded, expected)
-        }
-    }
-    
     func test_decode_nonAsciiInput_shouldThrowError() {
         let nonAsciiInput = "dogface 🐶"
         
@@ -35,10 +23,4 @@ class Base32Decoder_StringDecoderTests: XCTestCase {
         }
     }
     
-}
-
-private extension Data {
-    var utf8String: String {
-        return String(data: self, encoding: .utf8)!
-    }
 }
