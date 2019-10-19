@@ -5,3 +5,7 @@
 /.build
 # /Packages
 # /*.xcodeproj
+
+## Xcode
+*.xcworkspace/xcuserdata/*
+xcuserdata/*
