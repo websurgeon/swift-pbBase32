@@ -22,7 +22,7 @@ public struct Alphabet {
     public func index(of byte: Byte) -> Int? {
         let char: String = String(bytes: [byte], encoding: .ascii)!
         
-        guard let index = self.values.index(of: char) else {
+        guard let index = self.values.firstIndex(of: char) else {
             return nil
         }
         
