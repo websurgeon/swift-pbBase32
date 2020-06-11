@@ -9,3 +9,4 @@
 ## Xcode
 *.xcworkspace/xcuserdata/*
 xcuserdata/*
+.swiftpm/xcode/xcuserdata/*
